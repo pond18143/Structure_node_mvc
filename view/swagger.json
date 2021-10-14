@@ -24,25 +24,25 @@
         "parameters": [
           {
             "in": "formData",
-            "name": "firstName",
+            "name": "Fname",
             "description": "firstName",
             "type": "string"
           },
           {
             "in": "formData",
-            "name": "lastName",
+            "name": "Lname",
             "description": "lastName",
             "type": "string"
           },
           {
             "in": "formData",
-            "name": "educate",
+            "name": "University",
             "description": "educate",
             "type": "string"
           },
           {
             "in": "formData",
-            "name": "partyName",
+            "name": "PartyName",
             "description": "partyName",
             "type": "string"
           }
