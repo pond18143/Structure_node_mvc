@@ -1,0 +1,81 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "",
+    "version": "MVC1-64",
+    "title": "Political"
+  },
+  "host": "localhost:8080",
+  "basePath": "/",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/register": {
+      "post": {
+        "tags": [
+          "Register"
+        ],
+        "summary": "create candidate",
+        "description": "",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "firstName",
+            "description": "firstName",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "lastName",
+            "description": "lastName",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "educate",
+            "description": "educate",
+            "type": "string"
+          },
+          {
+            "in": "formData",
+            "name": "partyName",
+            "description": "partyName",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "properties": {
+                "message": {
+                  "type": "string"
+                }
+              },
+              "example": {
+                "message": "JSON file Create"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "properties": {
+                "message": {
+                  "type": "string"
+                }
+              },
+              "example": {
+                "message": "Worng Input"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
