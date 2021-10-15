@@ -5,7 +5,7 @@ const tmpDB = DB;
 class logic {
     async CreatePolitic(req) {
         var FunctionName = "[CreatePolitic]";
-        console.log(req)
+        console.log("InPut" ,req)
         let Fname = req.Fname;
         let Lname = req.Lname;
         let University = req.University;
@@ -28,18 +28,15 @@ class logic {
 
             //Write data to JSON file => Save data
             fs.writeFileSync("./models/tmpDB.json", jsonString, (err) => {
-                if (err) {
-                    console.log(" Write file fail ", err);
-                } else {
-                    console.log(" Write file success");
-                }
+                if (err) throw err;
+                console.log('JSON File Created!');
             });
-
 
             msg = {
                 StatusCode: 201,
                 Data: tmpDB,
               };
+            console.log("register success")
             return msg;
         } catch (error) {
             let messageError = {
