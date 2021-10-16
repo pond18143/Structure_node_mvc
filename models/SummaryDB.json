@@ -1,0 +1,12 @@
+[
+  {
+    "Assignment_id": "Assignment1",
+    "Student": "620501",
+    "summarize": "ส่งงานแล้วทันเวลา"
+  },
+  {
+    "Assignment_id": "Assignment2",
+    "Student": "620502",
+    "summarize": "ส่งงานแล้วช้ากว่ากําหนด"
+  }
+]

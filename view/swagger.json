@@ -11,12 +11,12 @@
     "http"
   ],
   "paths": {
-    "/register": {
+    "/Assignment": {
       "post": {
         "tags": [
-          "Register"
+          "Assignment"
         ],
-        "summary": "create candidate",
+        "summary": "create Assignment",
         "description": "",
         "consumes": [
           "application/x-www-form-urlencoded"
@@ -24,27 +24,41 @@
         "parameters": [
           {
             "in": "formData",
-            "name": "Fname",
-            "description": "firstName",
-            "type": "string"
+            "name": "Assignment",
+            "description": "Requirement Assignment",
+            "required": true,
+            "type": "string",
+            "default": "Assignment1"
           },
           {
             "in": "formData",
-            "name": "Lname",
-            "description": "lastName",
-            "type": "string"
+            "name": "Detail",
+            "description": "Detail about Assignment",
+            "type": "string",
+            "default": "description about Assignment"
           },
           {
             "in": "formData",
-            "name": "University",
-            "description": "educate",
-            "type": "string"
+            "name": "DueDate",
+            "description": "DueDate",
+            "type": "string",
+            "default": "2021-10-16T08:39:17.491Z"
           },
           {
             "in": "formData",
-            "name": "PartyName",
-            "description": "partyName",
-            "type": "string"
+            "name": "StudentId",
+            "description": "Requirement StudentId",
+            "required": true,
+            "type": "string",
+            "default": 620501
+          },
+          {
+            "in": "formData",
+            "name": "StudentId2",
+            "description": "Requirement StudentId2",
+            "required": true,
+            "type": "string",
+            "default": 620502
           }
         ],
         "responses": {
@@ -57,7 +71,7 @@
                 }
               },
               "example": {
-                "message": "JSON file Create"
+                "message": "Create Assignment success"
               }
             }
           },
@@ -71,6 +85,98 @@
               },
               "example": {
                 "message": "Worng Input"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/Turnin": {
+      "post": {
+        "tags": [
+          "Assignment"
+        ],
+        "summary": "TurnIn Assignment",
+        "description": "",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "parameters": [
+          {
+            "in": "formData",
+            "name": "IdStudent",
+            "description": "IdStudent",
+            "required": true,
+            "type": "string",
+            "default": 620501
+          },
+          {
+            "in": "formData",
+            "name": "AssignmentName",
+            "description": "AssignmentName",
+            "required": true,
+            "type": "string",
+            "default": "Assignment1"
+          },
+          {
+            "in": "formData",
+            "name": "TextAnswer",
+            "description": "TextAnswer",
+            "type": "string",
+            "default": "bra bra bra bra bra"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "properties": {
+                "message": {
+                  "type": "string"
+                }
+              },
+              "example": {
+                "message": "TurnIn Success"
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "schema": {
+              "properties": {
+                "message": {
+                  "type": "string"
+                }
+              },
+              "example": {
+                "message": "Worng Input"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/SummaryAssignment": {
+      "get": {
+        "tags": [
+          "Summary"
+        ],
+        "summary": "summary Assignment",
+        "description": "",
+        "consumes": [
+          "application/x-www-form-urlencoded"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "properties": {
+                "message": {
+                  "type": "string"
+                }
+              },
+              "example": {
+                "message": "Summary Assignment success"
               }
             }
           }

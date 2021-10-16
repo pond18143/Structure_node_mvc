@@ -1,0 +1,38 @@
+[
+  {
+    "IdStudent": "620501",
+    "AssignmentName": "Assignment1",
+    "TextAnswer": "bra bra bra bra bra",
+    "TurnInDate": "2021-10-16T07:33:02.678Z"
+  },
+  {
+    "IdStudent": "620501",
+    "AssignmentName": "Assignment2",
+    "TextAnswer": "bra bra bra bra bra",
+    "TurnInDate": "2021-10-16T08:39:17.491Z"
+  },
+  {
+    "IdStudent": "620502",
+    "AssignmentName": "Assignment2",
+    "TextAnswer": "bra bra bra bra bra",
+    "TurnInDate": "2021-10-16T08:39:19.198Z"
+  },
+  {
+    "IdStudent": "620503",
+    "AssignmentName": "Assignment2",
+    "TextAnswer": "bra bra bra bra bra",
+    "TurnInDate": "2021-10-16T08:39:20.038Z"
+  },
+  {
+    "IdStudent": "620504",
+    "AssignmentName": "Assignment2",
+    "TextAnswer": "bra bra bra bra bra",
+    "TurnInDate": "2021-10-16T08:41:47.326Z"
+  },
+  {
+    "IdStudent": "620505",
+    "AssignmentName": "Assignment2",
+    "TextAnswer": "bra bra bra bra bra",
+    "TurnInDate": "2021-10-16T08:41:49.095Z"
+  }
+]

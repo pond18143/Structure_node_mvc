@@ -1,0 +1,32 @@
+[
+  {
+    "Assignment": "Assignment1",
+    "Detail": "description about Assignment",
+    "DueDate": "2021-10-16T08:39:17.491Z",
+    "StudentId": "620501"
+  },
+  {
+    "Assignment": "Assignment2",
+    "Detail": "description about Assignment",
+    "DueDate": "2021-10-16T08:39:17.491Z",
+    "StudentId": "620502"
+  },
+  {
+    "Assignment": "Assignment3",
+    "Detail": "description about Assignment",
+    "DueDate": "2021-10-16T08:39:17.491Z",
+    "StudentId": "620503"
+  },
+  {
+    "Assignment": "Assignment4",
+    "Detail": "description about Assignment",
+    "DueDate": "2021-10-16T08:39:20.038Z",
+    "StudentId": "620504"
+  },
+  {
+    "Assignment": "Assignment1",
+    "Detail": "description about Assignment",
+    "DueDate": "2021-10-16T08:39:20.038Z",
+    "StudentId": "620505"
+  }
+]
